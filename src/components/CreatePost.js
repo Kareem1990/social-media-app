@@ -1,13 +1,15 @@
 import React from "react";
 
-function CreatePost ({ user }) {
+function CreatePost ({ user, setPosts, posts }) {
 
     const [content, setContent] = React.useState("");
     const [image, setImage] = React.useState(null);
 
     function handleSubmit(event) {
         event.preventDefault();
-        const Post = { content, image, user }
+        const post = { content, image, user };
+        const newPosts = [post, ...posts ];
+        setPosts(newPosts);
     }
 
     return <div>
@@ -24,11 +26,13 @@ function CreatePost ({ user }) {
             />
             <button type="submit">Submit post</button>
         </form>
-        <p>{content}</p>
-        {image &&<img
+        {/* <p>{content}</p>
+        {image && <img
             style={{ height: 100, width: 200, objectFit: 'cover' }}
             src={URL.createObjectURL(image)}
-        />}
+        />} */}
+
+
     </div>
     
    
