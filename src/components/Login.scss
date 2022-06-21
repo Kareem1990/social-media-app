@@ -1,0 +1,18 @@
+@import "../App";
+
+div {
+    background-color: $primaryColor;
+    font-family: $primaryFont;
+    padding: 5px;
+    padding-left: 15px;
+    
+    h2 {
+      color: black;
+      font-family: $primaryFont;
+      justify-content:end;
+    }
+  }
+
+  button {
+    margin: 3px;
+  }

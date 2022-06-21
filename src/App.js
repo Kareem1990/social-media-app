@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import Header from "./components/Header";
 import CreatePost from "./components/CreatePost";
 import PostList from "./components/PostList";
+import  "./App.scss"
 
 function App() {
   const [user, setUser] = React.useState('');
