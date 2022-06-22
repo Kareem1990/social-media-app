@@ -3,6 +3,7 @@ import "./Post.scss"
 
 function Post ({ image, content, user }) {
 
+
     return <>
       {image && (
         <img

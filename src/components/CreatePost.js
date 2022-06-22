@@ -1,11 +1,12 @@
 import React from "react";
 import "./CreatePost.scss"
 
-function CreatePost ({ user, handleAddPost }) {
+function CreatePost ({ user, handleAddPost, posts, setPosts }) {
 
     const [content, setContent] = React.useState("");
     const [image, setImage] = React.useState(null);
     const imageInputRef= React.useRef();
+    
 
 
     function handleSubmit(event) {
