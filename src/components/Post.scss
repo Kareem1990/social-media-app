@@ -1,18 +1,16 @@
 @import "../App";
 
 Post {
+    @include flexCenter();
+}
+
+img {
     @include flexCenter;
+    height: 100%;
+    max-width: 500px;
+    object-fit: center;
+    border: 2px solid black;
+    border-radius: 2%;
+    padding: 2px;
+    margin: 30px;
 }
-
-
-    img {
-        @include flexCenter;
-        height: 100%;
-        max-width: 500px;
-object-fit: center; 
-border: 2px solid black;
-border-radius: 2%;
-padding: 2px;
-margin: 30px;
-}
-    

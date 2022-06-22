@@ -1,0 +1,6 @@
+input[type=file]::file-selector-button{
+    margin: 3px;
+    &:hover {
+      background: rgb(0, 177, 216);
+    }
+  }

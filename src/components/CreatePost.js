@@ -1,4 +1,5 @@
 import React from "react";
+import "./CreatePost.scss"
 
 function CreatePost ({ user, handleAddPost }) {
 
@@ -11,10 +12,11 @@ function CreatePost ({ user, handleAddPost }) {
         event.preventDefault();
         const post = { content, image, user };
         handleAddPost(post);
-        // const newPosts = [post, ...posts ];
-        // setPosts(newPosts);
         setContent("");
         imageInputRef.current.value= '';
+        // const newPosts = [post, ...posts ];
+        // setPosts(newPosts);
+
     }
 
     return <div>

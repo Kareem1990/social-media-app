@@ -1,19 +1,23 @@
 $primaryColor: #99f7f2;
-$primaryFont: 'Inconsolata', monospace;
+$primaryFont: "Inconsolata", monospace;
 
-
-@mixin flexCenter {
+@mixin flexCenter () {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 body {
-  @include flexCenter;
-  background-color: $primaryColor
+  @include flexCenter();
+  background-color: $primaryColor;
 }
 
-button, input {
+button{
+  &:hover {
+    background: rgb(0, 177, 216);
+  }
+input {
   margin: 3px;
 }
+}
+
