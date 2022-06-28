@@ -11,7 +11,7 @@ function CreatePost ({ user, handleAddPost, posts, setPosts }) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        const post = { content, image, user };
+        const post = { content, image, user, id: Date.now() };
         handleAddPost(post);
         setContent("");
         imageInputRef.current.value= '';
